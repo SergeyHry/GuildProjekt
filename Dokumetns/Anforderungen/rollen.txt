@@ -1,0 +1,17 @@
+| Aktion                  | USER | ADMIN | Gast |
+| ----------------------- | ---: | ----: | ----:|
+| Posts lesen             |    ✓ |     ✓ |    ✓ |
+| Events erstellen        |    x |     ✓ |    x |
+| Events ansehen          |    ✓ |     ✓ |    ✓ |
+| Post erstellen          |    ✓ |     ✓ |    x |
+| eigenen Post bearbeiten |    ✓ |     ✓ |    x |
+| fremden Post bearbeiten |    ✗ |     ✓ |    x |
+| eigenen Post löschen    |    ✓ |     ✓ |    x |
+| fremden Post löschen    |    ✗ |     ✓ |    x |
+| Tasks lesen             |    ✓ |     ✓ |    x |
+| Task erstellen          |    ✓ |     ✓ |    x |
+| eigenen Task bearbeiten |    ✓ |     ✓ |    x |
+| fremden Task bearbeiten |    ✗ |     ✓ |    x |
+| Task übernehmen         |    ✓ |     ✓ |    x |
+| Task abschließen        |    ✓ |     ✓ |    x |
+| User verwalten          |    ✗ |     ✓ |    x |

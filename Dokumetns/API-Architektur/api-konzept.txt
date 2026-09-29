@@ -1,0 +1,61 @@
+REST API
+
+1 Allgemeine API-Konventionen:
+Base URL:
+/api
+
+Format:
+JSON
+
+HTTP:
+HTTPS
+
+Authentication:
+noch festzulegen / Spring Security
+
+IDs:
+Integer / UUID
+2 Authentication:
+| Methode | Endpoint                  | Beschreibung                                | Auth       |
+| ------- | --------------------------| --------------------------------------------| ---------- |
+| POST     | `/api/auth/login`        | User login                                  | Gast       |
+| POST     | `/api/auth/registration` | User registrieren                           | Gast       |
+3 Users:
+| Methode | Endpoint                  | Beschreibung                                | Auth       |
+| ------- | --------------------------| --------------------------------------------| ---------- |
+| GET     | `/api/users`              | Users abrufen                               | User/Admin |
+| GET     | `/api/users/{id}`         | einzelnen user abrufen                      | Gast       |
+| PUT     | `/api/users/{id}`         | User status ändern (aktivieren/deaktivieren)| Admin      |
+| DELETE  | `/api/users/{id}`         | user löschen                                | Admin      |
+
+4 Posts:
+| Methode | Endpoint          | Beschreibung            | Auth       |
+| ------- | ----------------- | ----------------------- | ---------- |
+| GET     | `/api/posts`      | Posts abrufen           | Gast       |
+| GET     | `/api/posts/{id}` | einzelnen Post abrufen  | Gast       |
+| POST    | `/api/posts`      | Post erstellen          | User/Admin |
+| PUT     | `/api/posts/{id}` | eigenen Post bearbeiten | User/Admin |
+| DELETE  | `/api/posts/{id}` | eigenen Post löschen    | User/Admin |
+5 Tasks:
+| Methode | Endpoint                  | Beschreibung            | Auth       |
+| ------- | --------------------------| ----------------------- | ---------- |
+| GET     | `/api/tasks`               | tasks abrufen           | User       |
+| PUT    |  /api/tasks/{id}/complete   | task abschließen        | User/admin |
+| POST    | /api/tasks/{id}/assign     | task unterschrieben     | User/admin |
+| GET     | `/api/tasks/{id}`          | einzelnen task abrufen  | User       |
+| POST    | `/api/tasks`               | task erstellen          | User       |
+| PUT     | `/api/tasks/{id}`          | eigenen task bearbeiten | User/Admin |
+| DELETE  | `/api/tasks/{id}`          | eigenen task löschen    | User/Admin |
+6 Events
+| Methode | Endpoint                    | Beschreibung            | Auth             |
+| ------- | -------------------------- | -----------------------  | ---------------- |
+| GET     | `/api/events`               | events abrufen           | User/Gast/Admin  |
+| GET     | `/api/events/{id}`          | einzelnen event abrufen  | User/Gast/Admin  |
+| POST    | `/api/events`               | event erstellen          | Admin            |
+| PUT     | `/api/events/{id}`          | eigenen event bearbeiten | Admin            |
+| DELETE  | `/api/events/{id}`          | eigenen event löschen    | Admin            |
+7 HTTP-Statuscodes
+| Methode | Endpoint                    | Beschreibung            | Auth             |
+| ------- | -------------------------- | -----------------------  | ---------------- |
+
+

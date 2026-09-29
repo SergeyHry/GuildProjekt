@@ -1,0 +1,29 @@
+Anforderungen an Webseite:
+
+Funktionale:
+--------------------------------
+Users
+--------------------------------
+- Users dürfen Posts erstellen/anschauen und können eigene Posts Löschen und Bearbeiten
+- Posts können Bilder und Videos beinhaten. Users können Posts kommentieren und Ihre Kommentaren löschen und diese Posts Liken
+- Users können Tasks erstellen, anschauen, bearbeiten und löschen und Tasks anderen Users zu übernemehn/Unterschreiben
+- nach Task Übernahme Task erhält ein Status - "im Prozess"
+- nach dem Task beendet wird landet dieses Task in Archive
+--------------------------------
+Admin
+________________________________
+- Admin hat gleiche Rechte und Features wie Users
+- Admin kann selbst die Posts und kommetaren, so wie Tasks anderen Users löschen
+- Admin kann Events Erstellen
+--------------------------------
+Gast
+--------------------------------
+- Gast kann Posts & Events nur ansehen und hat keinen zugriff auf Tasks
+- Gast kann sich Regestrieren & anmelden
+- Registration erfolgt nur über den Einladungscode von Admin / Guildmaster
+Nicht-Funktionale:
+------------------------------------
+- Webseite wird durch Docker Container deployed
+- Webseite ist erweitbar und kann neue Feauters in Zukunft haben
+- Freundliche und Wow-Thematische UI/UX
+- Webseite muss gute Security Level haben und SSL Zertifikat haben
